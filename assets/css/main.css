@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    display: flex;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*=====HEADERS =====*/
+
+#header{
+    background: #23282d;
+    padding-top:27px ;
+    padding-bottom: 10px;
+    
+}
+form#search{
+    position: relative;
+}
+form#search input{
+    width: 248px;
+   border: none;
+    outline: none;
+   padding: 9px 42px 9px 15px ;
+   background: #131619;
+   color: #909090;
+   
+}
+form#search button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    padding: 9px 12px;
+    color: #fff;
+    outline: none;
+}
+form#search ::placeholder{
+    color: #909090;
+}
+nav{
+    margin-top: 7px;
+    flex-basis: 100%;
+    border-right: 10px solid #ff2d2d;
+}
+ul#main-menu li a{
+    padding: 5px 20px;
+    display: block;
+    color: #eeeeee;
+}
+ul#main-menu li:first-child a{
+    padding-left: 0;
+}
+ul#main-menu li:hover a,
+ul#main-menu li.active a{
+    text-decoration: none;
+    color: #4db2ec;
+}
+/*===========Nổi bật====*/
+.box{
+    padding-top: 30px;
+}
+.box .box-head h3{
+    display: inline-block;
+    background: #23282d;
+    padding:1px 15px ;
+    color: #eeeeee;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+.box .box-body{
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom:1px solid #dadada; ;
+}
+ul.lis-featured-post li{
+    flex:0 1 360px;
+}
+ul.lis-featured-post li a.post-title{
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+}
+ul.lis-featured-post li .post-thumb{
+    display: block;
+    overflow: hidden;
+}
+ul.lis-featured-post li .post-thumb img{
+    transition: all 0.25s;
+}
+ul.lis-featured-post li .post-thumb:hover img{
+transform: scale(1.05);
+}
+/* bai viet moi */
+#content{
+    flex: 765px;
+    padding-right: 15px;
+}
+#sedibar{
+    flex: 375px;
+    padding-left: 15px;
+}
+
+.box.new-post .box-head h3{
+    background: #4db2ec;
+}
+.box.new-post .box-body{
+    border: none;
+}
+.box.new-post .box-head{
+    border-bottom: 3px solid #4db2ec;
+}
+ul.list-bost li{
+    display: flex;
+   margin-bottom: 40px;
+}
+
+ul.list-bost li a.post-thumb{
+    padding-right: 15px;
+    flex: 280px;  
+}
+
+ul.list-bost li .more-info{
+    padding-left: 15px;
+}
+
+.more-info a.post-title{
+    font-size: 21px;
+    color: #111111;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.more-info a.post-title:hover
+,.more-info a.active{
+    color: #97cef2;
+}
+.more-info .post-published a.post-author,span.post-date{
+    font-size: 11px;
+    font-weight: 600;
+}
+.more-info .post-published{
+    padding: 3px 0;
+}
+.more-info .post-published span.post-date{
+    color: #dadada;
+}
+.more-info .post-published a.post-author{
+    color: #111111;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.more-info p.post-axecrpt{
+    font-size: 13px;
+    font-weight: 600;
+    color: #8d8d8d;
+    margin: 0;
+}
+/* sidebar */
+a.ads{
+    display: block;
+  margin-bottom: 10px;
+}
+.box.top-topic .box-head h3{
+    background: #ff2d2d;
+}
+.box.top-topic .box-head{
+    border-bottom: 2px solid #ff2d2d;
+}
+ul.list-topic li{
+    padding: 6px 0;
+    
+}
+.box.top-topic .box-body{
+    border: none;
+}
+ul.list-topic li a{
+font-size: 16px;
+color:#525252;
+font-weight: 600;
+text-decoration: none;
+display: block;
+position: relative;
+}
+ul.list-topic li a span{
+    position: absolute;
+    right: 20px;
+    top: 6px;
+}
+ul.list-topic li a:hover{
+    color: #ff2d2d;
+}
+
+/* footer */
+#footer {
+    background: #2e2f30;
+}
+#footer .box .box-head h3{
+background: none;
+padding-left: 0;
+padding-right: 0;
+}
+
+
+#footer  .box.logo-footer{
+    flex: 280px;
+    padding-right: 15px;
+
+}
+#footer .box .box-body{
+    border: none;
+   padding-top: 40px;
+   margin-top: 0;
+}
+#footer  .box.about-us{
+flex: 680px;
+padding-right: 180px;
+padding-left: 15px;
+border: none;
+
+}
+#footer  .box.flow-us{
+    flex: 180px;
+    padding-left: 15px;
+ 
+}
+
+
+
+.box.about-us .box-body p{
+    color: #f5f5f5;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.box-body ul.list-social {
+    display: flex;
+}
+ul.list-social li {
+      
+      margin-left: 15px;
+}
+ul.list-social li:first-child{
+    margin-left: 0;
+}
+
+ul.list-social li a {
+    color: #eeeeee;
+    padding: 5px 12px;
+    background: #434648;
+   display: block;
+}
+ul.list-social li:hover a{
+    color: #47718a;
+}
+.box.logo-footer .box-head{
+     visibility: hidden;/*//dùng để ẩn một phần tử mà ko xóa đi vị trí của chúng. */
+}
+/* copyright */
+#wb-copyright{
+    background: #222527;
+    padding: 15px 0;
+}
+#wb-copyright p.copyright{
+    color: #c8c9c9;
+    margin: 0;
+  
+}
+ul#footer-menu{
+    display: flex;
+}
+
+ul#footer-menu li a{
+    color: #c8c9c9;
+    text-decoration: none;
+    margin-left: 30px;
+}
